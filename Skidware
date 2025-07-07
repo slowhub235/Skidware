@@ -1,71 +1,6 @@
-repeat task.wait() until game:IsLoaded()
-
--- Load Fluent
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/CodeE4X-dev/Library/main/FluentRemake.lua"))()
-
--- Key List
-local validKeys = {
-    ["SKIDWARE-A1B2C"] = true
-    ["SKIDWARE-9X8Y7"] = true
-     ["SKIDWARE-M3N4P"] ‎ =  true
-}
-local keyAccepted = false
-local enteredKey = ""
-
--- Create Main Window
-local win = Fluent:CreateWindow({
-    Title = "Skidware Key System",
-    SubTitle = "Authorization Required",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(500, 300),
-    Acrylic = true,
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl
-})
-
-local tab = win:AddTab({ Title = "Key", Icon = "lock" })
-
--- Add Key Paragraph
-tab:AddParagraph({
-    Title = "Enter Your Key",
-    Content = "Paste the key below to unlock Skidware."
-})
-
--- Use input box through AddDropdown hack (or create one manually)
-tab:AddInput("Key", {
-    Title = "Key",
-    Placeholder = "Enter key...",
-    Callback = function(value)
-        enteredKey = value
-    end
-})
-
--- Submit button
-tab:AddButton({
-    Title = "Submit Key",
-    Description = "Validate and unlock Skidware",
-    Callback = function()
-        if validKeys[enteredKey] then
-            Fluent:Notify({
-                Title = "Success",
-                Content = "Correct key. Unlocking...",
-                Duration = 4
-            })
-            keyAccepted = true
-            win:Destroy()
-        else
-            Fluent:Notify({
-                Title = "Invalid Key",
-                Content = "Try again. That key isn't valid.",
-                Duration = 4
-            })
-        end
-    end
-})
-
--- Wait until key is accepted
-repeat task.wait() until keyAccepted
-
+repeat
+	task.wait();
+until game:IsLoaded() 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -753,7 +688,7 @@ ManualSpam()
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/CodeE4X-dev/Library/refs/heads/main/FluentRemake.lua"))();
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))();
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))();
-local Window = Fluent:CreateWindow({Title="Blade Ball - Skidware BETA",SubTitle="by xosu",TabWidth=160,Size=UDim2.fromOffset(500, 300),Acrylic=true,Theme="Dark",MinimizeKey=Enum.KeyCode.LeftControl});
+local Window = Fluent:CreateWindow({Title="Blade Ball - gay hub BETA",SubTitle="by xosu",TabWidth=160,Size=UDim2.fromOffset(500, 300),Acrylic=true,Theme="Dark",MinimizeKey=Enum.KeyCode.LeftControl});
 local Tabs = {Home=Window:AddTab({Title="Home",Icon="home"}),Main=Window:AddTab({Title="Main",Icon="swords"})};
 Window:SelectTab(1);
 
