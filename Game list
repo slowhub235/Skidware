@@ -1,4 +1,4 @@
 local Games = {
-  [15532962292] = "https://raw.githubusercontent.com/AhmadV99/Script-Games/main/BladeBall.lua", -- Blade Ball
+  [15532962292] = "https://raw.githubusercontent.com/slowhub235/Skidware/refs/heads/main/Skidwar" -- Blade Ball
   [185655149] = "https://raw.githubusercontent.com/AhmadV99/Script-Games/main/Brookhaven.lua" -- Brookhaven
 }
